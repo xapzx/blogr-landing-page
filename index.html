@@ -16,12 +16,16 @@
 <body>
   <header class="hero">
     <div class="header-top">
-      <img src="images/logo.svg" alt="Brand Logo">
-      <nav>
+      <img src="images/logo.svg" alt="Brand Logo" class="header-logo">
+      <button class="nav-toggler">
+        <img src="images/icon-hamburger.svg" alt="Hamburger menu icon">
+      </button>
+      <nav class="navbar collapse">
         <ul>
-          <li>
+          <li class="expandable">
             Product
-            <ul class="sub-menu">
+            <img src="images/icon-arrow-light.svg" alt="">
+            <ul class="sub-menu expand">
               <li>Overview</li>
               <li>Pricing</li>
               <li>Marketplace</li>
@@ -29,18 +33,20 @@
               <li>Integrations</li>
             </ul>
           </li>
-          <li>
+          <li class="expandable">
             Company
-            <ul class="sub-menu">
+            <img src="images/icon-arrow-light.svg" alt="">
+            <ul class="sub-menu expand">
               <li>About</li>
               <li>Team</li>
               <li>Blog</li>
               <li>Careers</li>
             </ul>
           </li>
-          <li>
+          <li class="expandable">
             Connect
-            <ul class="sub-menu">
+            <img src="images/icon-arrow-light.svg" alt="">
+            <ul class="sub-menu expand">
               <li>Contact</li>
               <li>Newsletter</li>
               <li>LinkedIn</li>

@@ -14,7 +14,7 @@
     /* Background gradient - Intro/CTA mobile nav: */
     --clr-gradient-xlightred: hsl(13, 100%, 72%);
     --clr-gradient-lightred: hsl(353, 100%, 62%);
-    --clr-intro-gradient: linear-gradient(to right, var(--clr-gradient-xlightred), var(--clr-gradient-lightred));
+    --clr-intro-gradient: linear-gradient(to bottom right, var(--clr-gradient-xlightred), var(--clr-gradient-lightred));
     
     /* Background gradient - body: */
     --clr-body-gradient: linear-gradient(to right, var(--clr-gradient-darkblue), var(--clr-gradient-desatblue));
@@ -29,8 +29,185 @@
     --fw-ubuntu-regular: 400;
     --fw-ubuntu-bold: 500;
     --fw-ubuntu-xbold: 700;
+
+    --paddingX-mobile: 1rem;
 }
 
 body {
     background-color: var(--clr-neutral-white);
+    text-align: center;
+    font-family: var(--ff-overpass);
+}
+
+.hero {
+    background: url(images/bg-pattern-intro-mobile.svg), var(--clr-intro-gradient);
+    background-repeat: no-repeat;
+    background-position: bottom 65% right 65%;
+    padding: 3.5rem 1.5rem 10rem 1.5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+}
+
+.header-logo {
+    width: 5rem;
+}
+
+.collapse {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-toggler {
+    background-color: transparent;
+    border: none;
+}
+
+.hero-text {
+    color: var(--clr-neutral-white);
+    line-height: 1.25;
+    padding: 0 1rem;
+}
+
+.hero-title {
+    font-size: 2.125rem;
+    letter-spacing: -1px;
+    margin-bottom: 0.8rem;
+    font-weight: var(--fw-overpass-bold);
+}
+
+.hero-info {
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+}
+
+.hero-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-family: var(--ff-ubuntu);
+    font-weight: var(--fw-overpass-bold);
+}
+
+.hero-btn-wrapper > a {
+    text-decoration: none;
+    border: 1px solid var(--clr-neutral-white);
+    border-radius: 2rem;
+    padding: 0.8rem;
+    width: 8.75rem;
+}
+
+.start {
+    background-color: var(--clr-neutral-white);
+    color: var(--clr-primary-lightred);
+}
+
+.learn-more {
+    color: var(--clr-neutral-white);
+}
+
+
+@media (min-width: 900px) {
+    .hero {
+        background: url(images/bg-pattern-intro-desktop.svg), var(--clr-intro-gradient);
+        background-position: bottom 48% right 75%;
+        padding: 3.5rem 10rem 10rem 10rem;
+    }
+
+    .header-top {
+        gap: 4rem;
+    }
+
+    .header-logo {
+        width: 6rem;
+        height: 2.5rem;
+    }
+
+    .collapse {
+        display: block;
+    }
+
+    .navbar {
+        color: var(--clr-neutral-white);
+        flex: 1;
+        font-family: var(--ff-ubuntu);
+        font-weight: var(--fw-ubuntu-bold);
+    }
+
+    .navbar > ul {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .navbar > ul > li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .navbar > ul > li:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .login {
+        margin-left: auto;
+    }
+
+    .sub-menu {
+        position: absolute;
+        top: 3rem;
+        background-color: var(--clr-neutral-white);
+        color: var(--clr-neutral-footer-bg);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: var(--fw-ubuntu-regular);
+        text-align: left;
+        padding: 1.5rem;
+        border-radius: 4px;
+    }
+
+    .sub-menu > li:hover {
+        cursor: pointer;
+        font-weight: var(--fw-ubuntu-xbold);
+    }
+
+    .expand {
+        display: none;
+    }
+
+    .register {
+        background-color: var(--clr-neutral-white);
+        color: var(--clr-primary-lightred);
+        border-radius: 2rem;
+        padding: 0.5rem;
+        width: 8.5rem;
+    }
+
+    .nav-toggler {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 3.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-info {
+        letter-spacing: 1px;
+    }
 }
