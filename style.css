@@ -1,0 +1,32 @@
+:root {
+    /* Primary */
+    --clr-primary-lightred: hsl(356, 100%, 66%);
+    --clr-primary-xlightred: hsl(355, 100%, 74%);
+    --clr-primary-xdarkblue: hsl(208, 49%, 24%);
+
+    /* Neutral */
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-footer-text: hsl(240, 2%, 79%);
+    --clr-neutral-body-text: hsl(207, 13%, 34%);
+    --clr-neutral-footer-bg: hsl(240, 10%, 16%);
+
+    /* Gradient */
+    /* Background gradient - Intro/CTA mobile nav: */
+    --clr-gradient-xlightred: hsl(13, 100%, 72%);
+    --clr-gradient-lightred: hsl(353, 100%, 62%);
+    --clr-intro-gradient: linear-gradient(to right, var(--clr-gradient-xlightred), var(--clr-gradient-lightred));
+    
+    /* Background gradient - body: */
+    --clr-body-gradient: linear-gradient(to right, var(--clr-gradient-darkblue), var(--clr-gradient-desatblue));
+    --clr-gradient-darkblue: hsl(237, 17%, 21%);
+    --clr-gradient-desatblue: hsl(237, 23%, 32%);
+
+    --fs-base: 1rem;
+    --ff-overpass: 'Overpass', sans-serif;
+    --ff-ubuntu: 'Ubuntu', sans-serif;
+    --fw-overpass-regular: 300;
+    --fw-overpass-bold: 600;
+    --fw-ubuntu-regular: 400;
+    --fw-ubuntu-bold: 500;
+    --fw-ubuntu-xbold: 700;
+}
