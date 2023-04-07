@@ -30,3 +30,7 @@
     --fw-ubuntu-bold: 500;
     --fw-ubuntu-xbold: 700;
 }
+
+body {
+    background-color: var(--clr-neutral-white);
+}
