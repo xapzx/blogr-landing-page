@@ -370,8 +370,7 @@ ul {
 
 @media (min-width: 1300px) {
     .content-2 {
-        background: url(images/bg-pattern-circles.svg) left -300px top -800px, var(--clr-body-gradient);
-        background-size: cover;
+        background: url(images/bg-pattern-circles.svg) left -200px top -550px/70%, var(--clr-body-gradient);
         background-repeat: no-repeat;
         padding: 6rem 10rem;
         text-align: left;
